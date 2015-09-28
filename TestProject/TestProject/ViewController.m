@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(60, 100, 300, 60)];
+    label.text = @"Test Label";
+    label.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {
